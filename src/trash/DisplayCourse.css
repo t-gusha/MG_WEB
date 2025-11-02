@@ -1,0 +1,61 @@
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Additional Swiper customizations for DisplayCourse */
+
+/* Remove default Swiper padding and margins */
+.course-carousel {
+  padding: 0 !important;
+}
+
+.course-carousel .swiper-wrapper {
+  align-items: stretch;
+}
+
+.course-carousel .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Optional: Add navigation buttons styling */
+.course-carousel .swiper-button-next,
+.course-carousel .swiper-button-prev {
+  color: #3b82f6; /* brand-blue color */
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-carousel .swiper-button-next:after,
+.course-carousel .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 768px) {
+  .course-carousel .swiper-button-next,
+  .course-carousel .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* Smooth transitions */
+.course-carousel .swiper-slide-thumb-active button {
+  transform: scale(1) !important;
+}
+
+/* Optional: Custom scrollbar */
+.course-carousel .swiper-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+
+.course-carousel .swiper-scrollbar-drag {
+  background: #3b82f6;
+}
