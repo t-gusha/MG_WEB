@@ -9,7 +9,7 @@ function NavButton({ active, onClick, children }) {
     <button
       onClick={onClick}
       aria-current={active ? "page" : undefined}
-      className={`px-4 py-2 rounded-xl transition-all duration-300
+      className={`px-4 py-2 rounded-xl transition-all cursor-pointer duration-300
         ${
           active
             ? "bg-white/20 text-white backdrop-blur-md shadow"
