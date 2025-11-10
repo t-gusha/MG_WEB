@@ -2,16 +2,11 @@ import { useMemo, useRef } from "react";
 import { TEST_DATA } from "../test_data/ClndrTestData";
 
 function parseDateTime(dateStr, timeStr) {
-  // Accepts:
-  // - ISO date like "2025-10-20" + "10:00 AM"
-  // - Or a single ISO datetime in dateStr (then timeStr can be empty)
   if (!dateStr) return null;
 
-  // If dateStr already looks like a full datetime, try it as-is:
   let candidate = new Date(dateStr);
   if (!isNaN(candidate)) return candidate;
 
-  // Otherwise combine date + time
   const combined = timeStr ? `${dateStr} ${timeStr}` : dateStr;
   const dt = new Date(combined);
   return isNaN(dt) ? null : dt;
@@ -80,11 +75,12 @@ export default function TimelineScroll({ events = TEST_DATA }) {
       <div
         ref={containerRef}
         className="
-          flex gap-4 overflow-x-auto py-4 px-15
-          snap-x snap-mandatory
-          scroll-smooth
-          [scrollbar-width:thin]
-        "
+    flex gap-4 overflow-x-auto py-4 px-15
+    snap-x snap-mandatory
+    scroll-smooth
+    [scrollbar-width:none]
+    [&::-webkit-scrollbar]:hidden 
+  "
         style={{ scrollbarGutter: "stable" }}
         aria-label="Timeline events"
       >

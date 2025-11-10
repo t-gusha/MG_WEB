@@ -67,19 +67,19 @@ export default function HomeLanding({ setPage }) {
   return (
     <>
       {/* ===== HERO ===== */}
-      <div className="relative flex flex-col items-center justify-center w-full min-h-screen bg-brand-beige px-8 py-20 overflow-hidden">
+      <div className="relative flex flex-col items-center justify-center w-full min-h-screen bg-brand-beige px-8 py-8 overflow-hidden">
         <motion.section
           className="max-w-4xl text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
             Title
           </h1>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">Subtitle</p>
+          <div className="mt-4 mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-brand-violet/80 to-brand-blue/80" />
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="flex flex-col md:flex-row items-center justify-center mt-10 gap-8">
             <p className="text-base leading-relaxed text-center md:text-left text-gray-700 md:w-1/2">
               Explore a curated lineup of continuing education seminars designed
               to meet you where you are in your massage therapy career. Our

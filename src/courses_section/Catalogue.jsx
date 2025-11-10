@@ -83,8 +83,8 @@ export default function Catalogue() {
 
   return (
     <div className="w-full px-5 h-auto flex flex-col lg:flex-row">
-      <div className="h-auto basis-1/5 pt-10 p-6 overflow-y-auto flex flex-col justify-center items-start">
-        <h3 className="text-3xl font-bold mb-4 text-gray-800">
+      <div className="h-auto basis-2/6 pt-10 p-6 overflow-y-auto flex flex-col justify-center items-start">
+        <h3 className="text-4xl font-bold mb-3 text-gray-900">
           Courses and Titles
         </h3>
         <p className="mb-6 text-gray-700 leading-relaxed">
@@ -93,7 +93,7 @@ export default function Catalogue() {
         </p>
       </div>
 
-      <div className="h-auto basis-4/5 p-6 overflow-y-auto">
+      <div className="h-auto basis-4/6 p-6 overflow-y-auto">
         <div className="w-full flex flex-col items-center">
           {/* Viewport */}
           <div className="relative w-full overflow-hidden">
