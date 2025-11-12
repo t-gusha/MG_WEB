@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { PRESS_ITEMS } from "./PressTitles";
+import { PRESS_ITEMS } from "../test_data/PressTitles";
 
 // Optional fields supported per item:
 // { title, type, link, transcriptLink, image, excerpt, date, source, duration, tags: [] }
